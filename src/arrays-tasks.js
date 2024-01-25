@@ -421,13 +421,14 @@ function getFalsyValuesCount(arr) {
  *                              [0,0,0,1,0],
  *                              [0,0,0,0,1]]
  */
-function getIdentityMatrix(n) {
-  function createRow(__, rowIndex) {
-    return Array.from({ length: n }, function (_, colIndex) {
-      return rowIndex === colIndex ? 1 : 0;
-    });
-  }
-  return Array.from({ length: n }, createRow);
+function getIdentityMatrix(/* n */) {
+  // function createRow(__, rowIndex) {
+  throw new Error('Not implemented');
+  //   return Array.from({ length: n }, function (_, colIndex) {
+  //     return rowIndex === colIndex ? 1 : 0;
+  //   });
+  // }
+  // return Array.from({ length: n }, createRow);
 }
 
 /**
